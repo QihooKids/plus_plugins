@@ -14,8 +14,8 @@ internal class MethodCallHandler(
         expectMapArguments(call)
 
         // We don't attempt to return a result if the current API version doesn't support it
-        val isWithResult =
-            Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP_MR1
+        val isWithResult = false
+            //Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP_MR1
 
         if (isWithResult)
             manager.setCallback(result)
